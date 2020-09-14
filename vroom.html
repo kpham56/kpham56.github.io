@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Vehicle stuff </title>
+  <link rel = "stylesheet" href="style.css">
+  <script type="text/javascript">
+    function pageRedirect()
+    {
+        var url = document.getElementById('projects').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
+</script>
+</head>
+
+  <center>
+    <h1>Cars and Bikes</h1>
+    <div class="row">
+      <div class ="column">
+        <img id = "Vstar" src = "Vstar.jpg" alt = "The japanese 650 vtwin" >
+      </div>
+      <div class ="column">
+        <img id = "subie" src = "subie.jpg" alt = "2008 wrx hatchback" >
+      </div>
+    </div>
+    <p>Both are Japanese, have 5 gears, leak oil, and have great smiles per gallon<p>
+  </center>
+
+
+<div class = tab id = content>
+  <p class = indent> I've been interested in cars for a while, and the last couple of years I have been getting my hands dirty. I recently obtained my M1 license and
+  began riding motorcycles as well. Currently drive a 2008 Subaru WRX Hatchback, and ride a 2005 Yamaha Vstar. My goal is to keep the WRX mainly stock until after college, and begin
+  chasing power and handling once I have a big boy job. The Vstar is very sentimental, for it was given to me by a past friend's father. As much as I love it, I am currently looking for
+something more sporty and modern, so if you know anyone selling a DRZ400sm, SV650, CBR600RR or FZ07 let me know.</p>
+  <h2>Work I've done </h2>
+  <ul>
+    <li> Routine oil and filter changes</li>
+    <li> Replace coolant overflow tank</li>
+    <li> Install wind guards, mud flaps, roof rack</li>
+    <li> Replace interior and exterior bulbs with LED</li>
+    <li> Installed short shifter as well as transmission bushings </li>
+    <li> Replaced fender liner </li>
+    <li> Installed 4 channel amp and speakers while maintaining factory head unit and controls </li>
+  </ul>
+</div>
+<form class = tab>
+<select name="projects" id="projects" accesskey="target">
+  <option value = "resume.html">Home</option>
+  <option value = "plank.html">Plank Keyboard</option>
+  <option value = "bike.html">Bicycle Repair</option>
+  <option value = "vroom.html">Vehicle Maintence</option>
+</select>
+<input type="button" value="Go!" onclick="pageRedirect()">
+</form>

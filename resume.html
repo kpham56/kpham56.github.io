@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Kevin's Resume </title>
+  <link rel = "stylesheet" href="style.css">
+  <script type="text/javascript">
+    function pageRedirect()
+    {
+        var url = document.getElementById('projects').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
+    </script>
+    <script>
+    function password(){
+      var entry = prompt('Enter Password');
+      if (entry == 'frankbutt'){
+        window.open('transcript.html')
+      }
+    }
+    </script>
+</head>
+<center>
+  <div class="row">
+    <div class ="column">
+      <img id = "coolGuy" src = "coolGuy.jpg" alt = "Kevin pham with phillip" >
+    </div>
+    <div class ="column">
+      <center>
+      <video width= auto height="400px" controls>
+        <source src="meetKevin.mp4" type="video/mp4">
+        </center>
+    </video>
+    </div>
+  </div>
+</center>
+<br>
+
+<div class = tab id=content>
+<h2> About me </h2>
+  <p> Hi, I am a fourth year student at San Jose State University, and an aspiring computer engineer. I am 21, born and raised in San Jose.
+  In my free time, I like going on drives, taking my dog out for walks, and mountain biking. I'm a fan of motorsports, gaming, coffee, and sparkling water.
+  You can see my transcript <input type ="button" value ="here" onclick="password()">, and check out the classes I've completed.</p>
+<br>
+
+<h2> Projects </h2>
+<form>
+<select name="projects" id="projects" accesskey="target">
+  <option value = "cbim.html">Console Based Inventory Manager</option>
+  <option value = "plank.html">Plank</option>
+  <option value = "bike.html">Bicycle Repair</option>
+  <option value = "vroom.html">Vehicle Maintence</option>
+</select>
+<input type="button" value="Go!" onclick="pageRedirect()">
+</form>
+
+<p>
+<br>
+<h2> Languages Learned </h2>
+<table id = "ttable">
+<tr>
+  <th>Language</th>
+  <th>Proficiency</th>
+</tr>
+<tr>
+  <td>C++</td>
+  <td>Intermediate</td>
+</tr>
+<tr>
+  <td>Python</td>
+  <td>Intermediate</td>
+</tr>
+<tr>
+  <td>Java</td>
+  <td>Beginner</td>
+</tr>
+<tr>
+  <td>HTML/PHP</td>
+  <td>Beginner</td>
+</tr>
+<tr>
+  <td>Git</td>
+  <td>Beginner</td>
+</tr>
+</table>
+</div>
+
+
+
+
+
+</body>
+</html>

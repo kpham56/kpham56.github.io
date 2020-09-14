@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Console Based Inventory Manager </title>
+  <link rel = "stylesheet" href="style.css">
+  <script type="text/javascript">
+    function pageRedirect()
+    {
+        var url = document.getElementById('projects').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
+</script>
+</head>
+<center>
+  <h1>Console Based Inventory Manager</h1>
+  <img id = cbim src = "inventory.jpg" alt = "The console start menu of the program">
+  <p>The console based start menu of the program<p>
+</center>
+<div class = tab id = content>
+  <p class = indent> For my CMPE 126 Lab class, my final project was to create a program that would help people. For my proposal, I decided to make an inventory manager
+    for online sales. As someone who has used paypal, ebay, cragislist and depop to sell things, it gets messy remembering. I built this console based app to help me
+  manage items. This program feautres the ability to track quantity, titles, price, weight, and mark whether the product has been shipped or not. It keeps track of each
+  item by using a data structure made by me. The most challenging part of the program was making the save and load function work properly. It required lots of text parsing
+  and really showed me how to manage file inputs and output in C++. If I were to do it again, I would restructure the code to use a doubly linked list instead of a dynamic array.</p>
+</div>
+<form class = tab>
+<select name="projects" id="projects" accesskey="target">
+  <option value = "resume.html">Home</option>
+  <option value = "plank.html">Plank Keyboard</option>
+  <option value = "bike.html">Bicycle Repair</option>
+  <option value = "vroom.html">Vehicle Maintence</option>
+</select>
+<input type="button" value="Go!" onclick="pageRedirect()">
+</form>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Bicycle Repair </title>
+  <link rel = "stylesheet" href="style.css">
+  <script type="text/javascript">
+    function pageRedirect()
+    {
+        var url = document.getElementById('projects').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
+</script>
+</head>
+
+  <center>
+    <h1>Kevin's Bike Repair</h1>
+    <div class="row">
+      <div class ="column">
+        <img id = "oldBike" src = "oldBike.jpg" alt = "An 80's cromo bike" >
+      </div>
+      <div class ="column">
+        <img id = "yellowBike" src = "yellowBike.jpg" alt = "A new clean bike" >
+      </div>
+    </div>
+    <p>Before and after of a bike I built for my girlfriend. *Not pictured, new vbrakes, levers and wires<p>
+  </center>
+
+
+<div class = tab id = content>
+  <p class = indent> Ever since shelter in place began, I found myself biking a lot more. With all this extra free time, I figured might as well explore the Bay Area while getting some fitness out of it. After finding a free
+  bike frame by the garbage, I began fixing it up with used parts from Craigslist. This led to a new obsession, and I found myself looking for bikes to ride and to fix. I began mountain biking, dirt jumping, tandem biking
+with my mother. Looking for someone to hit up dirt jumps and soquel demo forest with. :)</p>
+  <h2>Repairs I've done </h2>
+  <ul>
+    <li> Replace rear derailleur, adjust H,L and B screws to perfect shifting</li>
+    <li> Fix and sell a fixed gear bicycle from the frame up</li>
+    <li> Fix, repaint, and sell a single speed mountain bike</li>
+    <li> Fix and repaint commuter bike as seen above, replacing the grips, seat, levers, and more</li>
+    <li> Refill tubeless sealant </li>
+    <li> Adjust pads in both mechanical and hydraulic disc brakes </li>
+    <li> Convert old tandem bike to single speed </li>
+  </ul>
+</div>
+<form class = tab>
+<select name="projects" id="projects" accesskey="target">
+  <option value = "resume.html">Home</option>
+  <option value = "plank.html">Plank Keyboard</option>
+  <option value = "bike.html">Bicycle Repair</option>
+  <option value = "vroom.html">Vehicle Maintence</option>
+</select>
+<input type="button" value="Go!" onclick="pageRedirect()">
+</form>
