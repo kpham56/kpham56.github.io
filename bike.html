@@ -1,54 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
 <head>
   <title> Bicycle Repair </title>
-  <link rel = "stylesheet" href="style.css">
-  <script type="text/javascript">
-    function pageRedirect()
-    {
-        var url = document.getElementById('projects').value;
-        if(url != 'none') {
-            window.location = url;
-        }
-    }
-</script>
+  <meta charset="utf-8">
+  <meta name ="viewport" content ="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  .tab { margin-left: 40px; }
+  </style>
 </head>
 
-  <center>
-    <h1>Kevin's Bike Repair</h1>
-    <div class="row">
-      <div class ="column">
-        <img id = "oldBike" src = "oldBike.jpg" alt = "An 80's cromo bike" >
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Kevin's Portfolio</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="plank.html">Plank Keyboard</a></li>
+          <li><a href="bike.html">Bicycle Repair</a></li>
+          <li><a href="vroom.html">Vehicle Maintence</a></li>
+        </ul>
+      </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<center>
+  <h2><b> Kevin's Bicycle Repair </b></h2>
+</center>
+
+<div class = "row">
+  <div class = "col-sm-2"></div>
+  <div class = "col-sm-8">
+  <div class = "container-fluid">
+    <h4 class = "tab"> Ever since shelter in place began, I found myself biking a lot more. With all this extra free time, I figured might as well explore the Bay Area while getting some fitness out of it. After finding a free
+      bike frame by the garbage, I began fixing the bike up with used parts from Craigslist. This led to a new obsession, and I found myself looking for bikes to ride and to fix. I began mountain biking, dirt jumping, even tandem biking
+      with my mother.</h4>
+    </div>
+  </div>
+  <div class = "col-sm-2"></div>
+</div>
+<br>
+
+<div class = container>
+  <h2><b> Work I've Done</b></h2>
+    <div class = "row">
+      <div class = "col-md-6">
+        <a href="bikes/oldBike.jpg">
+          <img src="bikes/oldBike.jpg" alt="An old univega" style ="width:100%">
+          <div class="caption">
+            <p>An old univega bike that was restored, shown on my makeshift bike stand</p>
+          </div>
+        </a>
       </div>
-      <div class ="column">
-        <img id = "yellowBike" src = "yellowBike.jpg" alt = "A new clean bike" >
+      <div class = "col-md-6">
+        <a href="bikes/yellowBike.jpg">
+          <img src="bikes/yellowBike.jpg" alt="A cute yellow bike" style ="width:100%">
+          <div class="caption">
+            <p>The repainted and repaired bike</p>
+          </div>
+        </a>
       </div>
     </div>
-    <p>Before and after of a bike I built for my girlfriend. *Not pictured, new vbrakes, levers and wires<p>
-  </center>
-
-
-<div class = tab id = content>
-  <p class = indent> Ever since shelter in place began, I found myself biking a lot more. With all this extra free time, I figured might as well explore the Bay Area while getting some fitness out of it. After finding a free
-  bike frame by the garbage, I began fixing it up with used parts from Craigslist. This led to a new obsession, and I found myself looking for bikes to ride and to fix. I began mountain biking, dirt jumping, tandem biking
-with my mother. Looking for someone to hit up dirt jumps and soquel demo forest with. :)</p>
-  <h2>Repairs I've done </h2>
-  <ul>
-    <li> Replace rear derailleur, adjust H,L and B screws to perfect shifting</li>
-    <li> Fix and sell a fixed gear bicycle from the frame up</li>
-    <li> Fix, repaint, and sell a single speed mountain bike</li>
-    <li> Fix and repaint commuter bike as seen above, replacing the grips, seat, levers, and more</li>
-    <li> Refill tubeless sealant </li>
-    <li> Adjust pads in both mechanical and hydraulic disc brakes </li>
-    <li> Convert old tandem bike to single speed </li>
-  </ul>
 </div>
-<form class = tab>
-<select name="projects" id="projects" accesskey="target">
-  <option value = "index.html">Home</option>
-  <option value = "plank.html">Plank Keyboard</option>
-  <option value = "bike.html">Bicycle Repair</option>
-  <option value = "vroom.html">Vehicle Maintence</option>
-</select>
-<input type="button" value="Go!" onclick="pageRedirect()">
-</form>
