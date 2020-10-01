@@ -7,15 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script type="text/javascript">
-    function pageRedirect()
-    {
-        var url = document.getElementById('projects').value;
-        if(url != 'none') {
-            window.location = url;
-        }
-    }
-    </script>
+  <script src="https://kit.fontawesome.com/2c7c3356e6.js" crossorigin="anonymous"></script>
     <script>
     function password(){
       var entry = prompt('Enter Password');
@@ -29,6 +21,19 @@
         margin-bottom: 0;
         border-radius: 0;
       }
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+      html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+      }
     </style>
 </head>
 
@@ -40,45 +45,85 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Kevin's Portfolio</a>
+      <a class="navbar-brand" href="index.html">Kevin Pham's Portfolio</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="plank.html">Plank Keyboard</a></li>
-          <li><a href="bike.html">Bicycle Repair</a></li>
-          <li><a href="vroom.html">Vehicle Maintence</a></li>
-        </ul>
-      </li>
       </ul>
     </div>
   </div>
 </nav>
 
 <br>
-
+<br>
 <div class = "row">
   <div class = "col-sm-1"></div>
   <div class = "col-sm-5">
-    <img id = "coolGuy" class ="img-rounded" src = "coolGuy.JPG" alt = "Kevin pham with phillip"  style = "width:80%" >
+    <br><br>
+    <h2> <b>About me</b> </h2>
+    <h4> Hi, I am a fourth year student at San Jose State University, and an aspiring computer engineer. I am 21, born and raised in San Jose.
+       I'm a fan of motorsports, the outdoors, coffee, and sparkling water.</h4>
+      <br><br>
+      <h2> <b> Projects </b> </h2>
+      <div class = "row">
+        <div class = "col-sm-4">
+          <a href="bike.html">
+            <span style="color: black;">
+                <i class="fas fa-bicycle fa-10x"></i>
+            </span>
+        </div>
+        <div class = "col-sm-4">
+          <a href="plank.html">
+            <span style="color: black;">
+                <i class="fas fa-keyboard fa-10x"></i>
+            </span>
+        </div>
+        <div class = "col-sm-4">
+          <a href="vroom.html">
+            <span style="color: black;">
+                <i class="fas fa-cogs fa-10x"></i>
+            </span>
+        </div>
+      </div>
     </div>
     <div class = "col-sm-5">
-      <br><br>
-      <h2> <b>About me</b> </h2>
-      <h4> Hi, I am a fourth year student at San Jose State University, and an aspiring computer engineer. I am 21, born and raised in San Jose.
-        In my free time, I like going on drives, taking my dog out for walks, and mountain biking. I'm a fan of motorsports, gaming, coffee, and sparkling water.</h4>
-    </div>
-    <div class = "col-sm-1">
+      <a href="coolGuy.JPG">
+      <img class ="img-rounded" src = "coolGuy.JPG" alt = "Kevin pham with phillip"  style = "width:80%" >
+    <div class = "col-sm-1"></div>
     </div>
 </div>
-<br>
-<br>
-<div class = "row">
-  <div class=
+
+
+<footer class="footer">
+  <div class = "row">
+    <div class = "col-sm-12"><p> <p></div>
+  </div>
+  <div class = "row">
+    <div class = "col-sm-4">
+      <a href="https://github.com/kpham56">
+        <span style="color: white;">
+          <i class="fab fa-github fa-2x"></i>
+        </span>
+    </div>
+  <div class = "col-sm-4">
+    <a href="mailto:phamkevin241@gmail.com?subject=Greetings%20from%20the%20website&body=Wow%2C%20Kevin%20is%20so%20cool!">
+      <span style="color: white;">
+        <i class="far fa-envelope fa-2x"></i>
+        </span>
+  </div>
+  <div class = "col-sm-4">
+    <a href="https://www.linkedin.com/in/kevin-pham-085799161/">
+      <span style="color: white;">
+        <i class="fab fa-linkedin-in fa-2x"></i>
+      </span>
+    </div>
+  </div>
+  <div class = "row">
+    <div class = "col-sm-12"><p> <p></div>
+  </div>
+</footer>
+
 
 </body>
 </html>
