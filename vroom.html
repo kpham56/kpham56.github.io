@@ -2,54 +2,147 @@
 <html>
 <head>
   <title> Vehicle stuff </title>
+  <meta charset="utf-8">
+  <meta name ="viewport" content ="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/2c7c3356e6.js" crossorigin="anonymous"></script>
   <link rel = "stylesheet" href="style.css">
-  <script type="text/javascript">
-    function pageRedirect()
-    {
-        var url = document.getElementById('projects').value;
-        if(url != 'none') {
-            window.location = url;
-        }
-    }
-</script>
+</head>
+<style>
+  .navbar{
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+</style>
 </head>
 
-  <center>
-    <h1>Cars and Bikes</h1>
-    <div class="row">
-      <div class ="column">
-        <img id = "Vstar" src = "Vstar.jpg" alt = "The japanese 650 vtwin" >
-      </div>
-      <div class ="column">
-        <img id = "subie" src = "subie.jpg" alt = "2008 wrx hatchback" >
-      </div>
-    </div>
-    <p>Both are Japanese, have 5 gears, leak oil, and have great smiles per gallon<p>
-  </center>
+<nav class="navbar navbar-inverse">
+<div class="container-fluid">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="index.html">Kevin Pham's Portfolio</a>
+  </div>
+  <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li class-"active"><a href="KevinPhamResume2020.pdf">Resume</a></li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+<center>
+  <h2><b> Cars and Bikes </b></h2>
+  <h4> I've been interested in cars for a while, and the last couple of years I have been getting my hands dirty.</h4>
+</center>
 
 
 <div class = tab id = content>
-  <p class = indent> I've been interested in cars for a while, and the last couple of years I have been getting my hands dirty. I recently obtained my M1 license and
-  began riding motorcycles as well. Currently drive a 2008 Subaru WRX Hatchback, and ride a 2005 Yamaha Vstar. My goal is to keep the WRX mainly stock until after college, and begin
-  chasing power and handling once I have a big boy job. The Vstar is very sentimental, for it was given to me by a past friend's father. As much as I love it, I am currently looking for
-something more sporty and modern, so if you know anyone selling a DRZ400sm, SV650, CBR600RR or FZ07 let me know.</p>
-  <h2>Work I've done </h2>
-  <ul>
-    <li> Routine oil and filter changes</li>
-    <li> Replace coolant overflow tank</li>
-    <li> Install wind guards, mud flaps, roof rack</li>
-    <li> Replace interior and exterior bulbs with LED</li>
-    <li> Installed short shifter as well as transmission bushings </li>
-    <li> Replaced fender liner </li>
-    <li> Installed 4 channel amp and speakers while maintaining factory head unit and controls </li>
-  </ul>
-</div>
-<form class = tab>
-<select name="projects" id="projects" accesskey="target">
-  <option value = "index.html">Home</option>
-  <option value = "plank.html">Plank Keyboard</option>
-  <option value = "bike.html">Bicycle Repair</option>
-  <option value = "vroom.html">Vehicle Maintence</option>
-</select>
-<input type="button" value="Go!" onclick="pageRedirect()">
-</form>
+  <div class = container-fluid>
+    <center><h2><b> The Stable</b></h2></center>
+      <br>
+      <div class = "row">
+        <div class = "col-md-6">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="vroom/subieOnIce.jpg" alt="2008 wrx">
+              </div>
+              <div class="item">
+                <img src="vroom/subieBoat.jpg" alt="2008 wrx with a boat">
+              </div>
+              <div class="item">
+                <img src="vroom/towed.jpg" alt="After the engine blew...">
+              </div>
+              <div class="item">
+                <img src="vroom/subieFront.jpg" alt="Front end friday!">
+              </div>
+          </div>
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <center><h4> 2008 Subaru WRX Hatchback <h4></center>
+      </div>
+        <div class = "col-md-6">
+          <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel2" data-slide-to="1"></li>
+              <li data-target="#myCarousel2" data-slide-to="2"></li>
+              <li data-target="#myCarousel2" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="vroom/Vstar.jpg" alt="An old bike">
+              </div>
+              <div class="item">
+                <img src="vroom/VstarPark.jpg" alt="Bike at the park">
+              </div>
+              <div class="item">
+                <img src="vroom/shinyBike.jpg" alt="After the wax">
+              </div>
+              <div class="item">
+                <img src="vroom/helmet.jpg" alt="Safety First!">
+              </div>
+          </div>
+          <a class="left carousel-control" href="#myCarouse2l" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        </div>
+        <center><h4> 2005 Yamaha Vstar 650 Custom <h4></center>
+      </div>
+
+      <div class = row>
+        <div class = col-md-1> </div>
+        <div class = col-md-10>
+          <ul class="list-group">
+            <center><li class="list-group-item active">Work I've Done</li></center>
+            <li class="list-group-item">Routine oil and filter changes</li>
+            <li class="list-group-item">Replace coolant overflow tank</li>
+            <li class="list-group-item">Install wind guards, mud flaps, roof rack, bike rack, canoe rack</li>
+            <li class="list-group-item">Replace interior and exterior bulbs with LED</li>
+            <li class="list-group-item">Installed short shifter as well as transmission bushings</li>
+            <li class="list-group-item">Replaced fender liner</li>
+            <li class="list-group-item">Installed 4 channel amp,speakers, and subwoofer while maintaining factory head unit and controls</li>
+          </ul>
+        </div>
+        <div class = col-md-1> </div>
+      </div>
+    </div>
