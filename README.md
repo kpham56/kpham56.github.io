@@ -4,3 +4,5 @@
 9/13/2020 page created
 
 9/28/2020 began using bootstrap  
+
+12/1/2020 updated my the gears page
