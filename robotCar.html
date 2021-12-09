@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> NS3 simulator </title>
+  <title> Ultrasonic Obstacle Avoidance robot </title>
   <meta charset="utf-8">
   <meta name ="viewport" content ="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -49,7 +49,7 @@
 </nav>
 
 <center>
-  <h2><b> NS3 Network Simulator </b></h2>
+  <h2><b> Ultrasonic Obstacle Avoidance Car </b></h2>
 </center>
 
 <div class = "row">
@@ -57,8 +57,11 @@
   <div class = "col-sm-8">
     <center>
   <div class = "container-fluid">
-    <h4> During my Summer 2021 internship with NASA Ames Research Center, I was tasked to create an AeroNautic Network Simulator.
-    </h4>
+    <h4> For my Microprocessor architecture class, I partnered with Dheeraj Nair to create an obstacle detecting car. Through our
+      research and work we were able to succefully implement the components and logic required.
+      <br> <a href="robotCar/TM4CCar.pdf">Project Paper</a>
+    | <a href="https://drive.google.com/file/d/1fXYco90lXaYNLVfAeNNtQCYTdZpFFJp2/view?usp=sharing">See it in action here!</a></h4>
+
   </div> </center>
   </div>
   <div class = "col-sm-2"></div>
@@ -68,38 +71,43 @@
     <br>
     <div class = "row">
       <div class = "col-md-6">
-        <a href="nasa/ns3Inputs.png">
-          <img src="nasa/ns3Inputs.png" alt="Simulation Input Config" style ="width:80%">
+        <a href="robotCar/carBottom.jpg">
+          <img src="robotCar/carBottom.jpg" alt="The bottom of the car" style ="width:80%">
           <center><div class="caption">
-            <p>The user can change these parameters to fit the desired scenario</p>
+            <p>The underside of the car, featuring the driver motor for the DC motor powered wheels</p>
           </div></center>
         </a>
         <br>
         <h2> Overview  </h2>
-        <h4> This project was built using <a href="https://www.nsnam.org/">NS3</a>, a free open source network event simulator. The goal was to create a configurable
-        simulation in which users can adjust inputs to calculate the resulting throughput, packet delivery, and other metrics. While working with peers, this was mainly a solo project.</h4>
+        <h5> This project was built using the Texas Instruments TM4C.
+         We chose this project due to our interest in smart cars. Drawing inspiration
+        from manufacturers like Tesla, Rivian, and Lucid, we chose to create a simple car as a proof of concept
+        to show that Ultrasonic sensors can be used to accurately gauge distance in autonomous automobiles.</h5>
           <br>
       </div>
       <div class = "col-md-5">
-        <a href="nasa/ns3Netanim.png">
-          <img src="nasa/ns3Netanim.png" alt="Netanim" style ="width:80%">
+        <a href="robotCar/roboCar.png">
+          <img src="robotCar/roboCar.png" alt="The Robotic Car" style ="width:80%">
           <div class="caption">
-            <center><p>The resulting simulation opened in NetAnim</p></center>
+            <center><p>The front view of our robotic car</p></center>
           </div>
         </a>
 
           <ul class="list-group">
-            <center><li class="list-group-item active">The Simulation</li></center>
-            <li class="list-group-item">Used LTE topology to connect MME, SGW, ENBs, UEs, PGW</li>
-            <li class="list-group-item">User definable
-              <ol>- Amount of UE Nodes</ol>
-              <ol>- Amount of ENB Nodes</ol>
-              <ol>- Packet Size, Amount and time to send</ol>
-              <ol>- Mobile or Stationary</ol>
-            </li>
-            <li class="list-group-item">Working Netanim xml output file to view simulation</li>
-            <li class="list-group-item">Terminal and txt file output of simulation results</li>
+            <center><li class="list-group-item active">Parts List</li></center>
+            <li class="list-group-item">1 3D printed car chassis</li>
+            <li class="list-group-item">1 SG90 Servo</li>
+            <li class="list-group-item">2 DC motors</li>
+            <li class="list-group-item">2 Plastic wheels</li>
+            <li class="list-group-item">2 18650 Batteries</li>
+            <li class="list-group-item">1 TM4C Controller</li>
+            <li class="list-group-item">1 SR04 Ultrasonic Sensor</li>
+            <li class="list-group-item">1 Caster wheel</li>
+            <li class="list-group-item">1 L928N Driver Module</li>
+            <li class="list-group-item"><a href="https://github.com/kpham56/cmpe127proj">Project Code</a></h4></li>
+
           </ul>
+
       </div>
     </div>
   </center>
