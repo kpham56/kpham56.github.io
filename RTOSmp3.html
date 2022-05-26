@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> FreeRtos MP3 Player </title>
+  <meta charset="utf-8">
+  <meta name ="viewport" content ="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/2c7c3356e6.js" crossorigin="anonymous"></script>
+  <style>
+    .navbar{
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: black;
+      color: white;
+      text-align: center;
+    }
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Kevin Pham's Portfolio</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li class-"active"><a href="phamKevinResume.pdf">Resume</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<center>
+  <h2><b> FreeRtos MP3 Player </b></h2>
+</center>
+
+<div class = "row">
+  <div class = "col-sm-2"></div>
+  <div class = "col-sm-8">
+    <center>
+  <div class = "container-fluid">
+    <h4> For my Embedded design class, I partnered with Maurice Washington and Johnny Nguyen
+         to create an MP3 player. The device features 4 mechanical switches,
+         an lcd screen, and standalone usage using a powerbank. In order to interface each component,
+         we had to read through numerous data sheets to create functions needed to communicate. This project used
+         SPI and UART.
+          We built the project over the span of 6 weeks.
+
+  </div> </center>
+  </div>
+  <div class = "col-sm-2"></div>
+</div>
+<br>
+<div class = container-fluid>
+    <br>
+    <div class = "row">
+      <div class = "col-md-6">
+        <center>
+
+          <a href="RTOSmp3/rtosmp3.jpg">
+            <img src="RTOSmp3/rtosmp3.jpg" alt="The assembled mp3 player" style ="width:60%; height:60%;" >
+            <center><div class="caption">
+              <p>The finished MP3 player</p>
+            </div></center>
+          </a>
+        </center>
+        <br>
+       
+
+          <br>
+      </div>
+      <div class = "col-md-5">
+          <ul class="list-group">
+            <center><li class="list-group-item active">Parts List</li></center>
+            <li class="list-group-item">1 VS1053 Decoder</li>
+            <li class="list-group-item">4 Cherry MX green switches</li>
+            <li class="list-group-item">1 Breadboard</li>
+            <li class="list-group-item">1 SJ2 Board</li>
+            <li class="list-group-item">1 16 x 2 Serial LCD screen</li>
+            <li class="list-group-item">1 Cardboard box for enclosure</li>
+            <li class="list-group-item"><a href="https://github.com/kpham56/146MP3">Project Code</a></h4></li>
+
+          </ul>
+          <h2> Overview  </h2>
+          <h5> This project was built using the SJSU SJ2 board produced by LPC.
+            As this is my RTOS project, I learned alot about design and control. Initially, we used CLI
+            for basic testing over serial communication. As we implemented more functions, we were able to test the device
+           only using the on board buttons and screen, just like a real consumer device. This project tied together everythin i've learned
+       the last few years, through its use of data structures, timing, bitshifting, resource sharing and more.</h5>
+      </div>
+    </div>
+  </center>
+</div>
+<br>
