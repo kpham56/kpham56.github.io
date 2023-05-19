@@ -7,4 +7,6 @@
 
 12/1/2020 updated my the gears page
 
+9/16/2022 added canon
+
 5/18/2023 I have not touched this in a while. Time to update.
